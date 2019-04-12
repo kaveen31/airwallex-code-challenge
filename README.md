@@ -4,6 +4,9 @@ The aim of this exercise is to implement an "alerting" service which
 will consume a file of currency conversion rates and
 produce alerts for a number of situations.
 
+This coding exercise can be performed in either Java or Kotlin. The build 
+system is configured to handle both languages.
+
 ### Input
 
 The format of the file will simulate a stream of currency

@@ -36,5 +36,5 @@ tasks.withType<Test> {
 }
 
 application {
-    mainClassName = "com.airwallex.codechallenge.AppKt"
+    mainClassName = "com.airwallex.codechallenge.App"
 }
