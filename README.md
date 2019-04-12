@@ -8,7 +8,7 @@ produce alerts for a number of situations.
 
 The format of the file will simulate a stream of currency
 conversion rates. Each line will be properly structured
-JSON:
+JSON (http://jsonlines.org/):
 
     { "timestamp": 1554933784.023, "currencyPair": "CNYAUD", "rate": 0.39281 }
 
@@ -39,6 +39,17 @@ The format of the alerts produced should be:
 
     { "timestamp": 1554933784.023, "currencyPair": "CNYAUD", "alert": "spotChange" }
     { "timestamp": 1554933784.023, "currencyPair": "CNYAUD", "alert": "falling", seconds: 3450 }
+
+### Build and Execution
+
+To build the application:
+```bash
+./gradlew clean build
+```
+To run the application:
+```bash
+./gradlew run --args example/input1.jsonl
+```
 
 ### Submissions
 
